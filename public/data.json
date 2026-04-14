@@ -1,0 +1,148 @@
+{
+  "friends": [
+    {
+      "id": 1,
+      "name": "Leonardo DiCaprio",
+      "picture": "https://randomuser.me/api/portraits/men/1.jpg",
+      "email": "leo.dicaprio@email.com",
+      "days_since_contact": 20,
+      "status": "overdue",
+      "tags": ["environment", "close friend"],
+      "bio": "Bonded over environmental activism events. Often discuss documentaries and global issues.",
+      "goal": 14,
+      "next_due_date": "2025-07-10"
+    },
+    {
+      "id": 2,
+      "name": "Scarlett Johansson",
+      "picture": "https://randomuser.me/api/portraits/women/2.jpg",
+      "email": "scarlett.j@email.com",
+      "days_since_contact": 10,
+      "status": "almost due",
+      "tags": ["gym", "casual"],
+      "bio": "Met at a fitness class. Occasionally catch up over coffee after workouts.",
+      "goal": 14,
+      "next_due_date": "2025-07-18"
+    },
+    {
+      "id": 3,
+      "name": "Robert Downey Jr.",
+      "picture": "https://randomuser.me/api/portraits/men/3.jpg",
+      "email": "rdj@email.com",
+      "days_since_contact": 5,
+      "status": "on-track",
+      "tags": ["mentor", "tech"],
+      "bio": "Acts as a mentor figure. We often talk about tech trends and personal growth.",
+      "goal": 14,
+      "next_due_date": "2025-07-25"
+    },
+    {
+      "id": 4,
+      "name": "Emma Watson",
+      "picture": "https://randomuser.me/api/portraits/women/4.jpg",
+      "email": "emma.w@email.com",
+      "days_since_contact": 16,
+      "status": "overdue",
+      "tags": ["books", "activism"],
+      "bio": "Met at a book club. Share recommendations and discuss social causes.",
+      "goal": 14,
+      "next_due_date": "2025-07-12"
+    },
+    {
+      "id": 5,
+      "name": "Chris Evans",
+      "picture": "https://randomuser.me/api/portraits/men/5.jpg",
+      "email": "chris.evans@email.com",
+      "days_since_contact": 13,
+      "status": "almost due",
+      "tags": ["sports", "weekend"],
+      "bio": "Play basketball together on weekends. Friendly and competitive vibe.",
+      "goal": 14,
+      "next_due_date": "2025-07-17"
+    },
+    {
+      "id": 6,
+      "name": "Jennifer Lawrence",
+      "picture": "https://randomuser.me/api/portraits/women/6.jpg",
+      "email": "jlaw@email.com",
+      "days_since_contact": 3,
+      "status": "on-track",
+      "tags": ["movies", "fun"],
+      "bio": "Movie buddy. We regularly watch new releases and share reviews.",
+      "goal": 14,
+      "next_due_date": "2025-07-27"
+    },
+    {
+      "id": 7,
+      "name": "Tom Holland",
+      "picture": "https://randomuser.me/api/portraits/men/7.jpg",
+      "email": "tom.h@email.com",
+      "days_since_contact": 15,
+      "status": "overdue",
+      "tags": ["gaming", "online"],
+      "bio": "Connected through online gaming. Mostly chat on weekends.",
+      "goal": 14,
+      "next_due_date": "2025-07-13"
+    },
+    {
+      "id": 8,
+      "name": "Zendaya",
+      "picture": "https://randomuser.me/api/portraits/women/8.jpg",
+      "email": "zendaya@email.com",
+      "days_since_contact": 11,
+      "status": "almost due",
+      "tags": ["fashion", "events"],
+      "bio": "Met at a fashion event. Stay in touch about trends and creative work.",
+      "goal": 14,
+      "next_due_date": "2025-07-19"
+    },
+    {
+      "id": 9,
+      "name": "Brad Pitt",
+      "picture": "https://randomuser.me/api/portraits/men/9.jpg",
+      "email": "brad.pitt@email.com",
+      "days_since_contact": 2,
+      "status": "on-track",
+      "tags": ["travel", "food"],
+      "bio": "Travel companion. We explore new restaurants and cuisines together.",
+      "goal": 14,
+      "next_due_date": "2025-07-28"
+    },
+    {
+      "id": 10,
+      "name": "Margot Robbie",
+      "picture": "https://randomuser.me/api/portraits/women/10.jpg",
+      "email": "margot.r@email.com",
+      "days_since_contact": 18,
+      "status": "overdue",
+      "tags": ["creative", "projects"],
+      "bio": "Collaborated on creative side projects. Haven’t caught up in a while.",
+      "goal": 14,
+      "next_due_date": "2025-07-11"
+    },
+    {
+      "id": 11,
+      "name": "Ryan Reynolds",
+      "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+      "email": "ryan.r@email.com",
+      "days_since_contact": 9,
+      "status": "almost due",
+      "tags": ["business", "humor"],
+      "bio": "Met through a startup event. Conversations are always witty and insightful.",
+      "goal": 14,
+      "next_due_date": "2025-07-20"
+    },
+    {
+      "id": 12,
+      "name": "Anne Hathaway",
+      "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+      "email": "anne.h@email.com",
+      "days_since_contact": 4,
+      "status": "on-track",
+      "tags": ["theatre", "arts"],
+      "bio": "Connected through theatre workshops. Share interest in performing arts.",
+      "goal": 14,
+      "next_due_date": "2025-07-26"
+    }
+  ]
+}
