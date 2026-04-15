@@ -1,23 +1,47 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { useState } from "react";
+
 
 const Navbar = () => {
+
+  const [home, setHome] = useState(true);
+  const [timeline, setTimeline] = useState(false);
+  const [stats, setStats] = useState(false);
+
+  const handleHome = () => {
+    setHome(true);
+    setTimeline(false);
+    setStats(false);
+  }
+  const handleTimeline = () => {
+    setHome(false);
+    setTimeline(true);
+    setStats(false);
+  }
+  const handleStats = () => {
+    setHome(false);
+    setTimeline(false);
+    setStats(true);
+  }
+
   const links = (
     <>
-      <li>
-        <Link href={"/"}>
+      <li className={`${home ? "bg-[#244D3F] text-white rounded-md": ""}`}>
+        <Link onClick={handleHome} href={"/"}>
           Home
         </Link>
       </li>
-      <li>
-        <Link href={"/timeline"}>
+      <li className={`${timeline ? "bg-[#244D3F] text-white rounded-md": ""}`}>
+        <Link onClick={handleTimeline} href={"/timeline"}>
           Timeline
         </Link>
       </li>
-      <li>
-        <Link href={"/stats"}>
-          Stats
+      <li className={`${stats ? "bg-[#244D3F] text-white rounded-md": ""}`}>
+        <Link onClick={handleStats} href={"/stats"}>
+           Stats
         </Link>
       </li>
     </>
