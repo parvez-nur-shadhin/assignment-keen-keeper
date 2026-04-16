@@ -2,7 +2,7 @@
 
 const CountCard = async() => {
 
-    const res = await fetch('http://localhost:3000/data.json');
+    const res = await fetch('https://assignment-keen-keeper.vercel.app/data.json');
     const data = await res.json();
     const friends = data.friends;
 
