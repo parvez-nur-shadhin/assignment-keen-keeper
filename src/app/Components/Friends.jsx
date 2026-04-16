@@ -1,9 +1,21 @@
+'use client'
+
+import { useEffect, useState } from "react";
 import FriendCard from "./FriendCard";
 
-const Friends = async () => {
-  const res = await fetch("http://localhost:3000/data.json");
-  const data = await res.json();
-  const friends = data.friends;
+const Friends = () => {
+
+  const [friends, setFriends] = useState([]);
+
+  useEffect(() => {
+    fetch('/data.json')
+     .then(res => res.json())
+     .then(data => setFriends(data.friends))
+  })
+  
+  // const res =  fetch("/data.json");
+  // const data = res.json();
+  // const friends = data.friends;
 
   return (
     <div className="max-w-277.5 mx-auto p-4">
