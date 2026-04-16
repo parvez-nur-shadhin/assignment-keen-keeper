@@ -1,5 +1,3 @@
-
-import Image from "next/image";
 import Banner from "./Components/Banner";
 import CountCard from "./Components/CountCard";
 import Friends from "./Components/Friends";

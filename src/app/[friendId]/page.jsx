@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { IoArchiveOutline, IoVideocamOutline } from "react-icons/io5";
-import { MdDeleteOutline, MdOutlinePhoneInTalk, MdOutlineTextsms } from "react-icons/md";
+import { IoArchiveOutline } from "react-icons/io5";
+import { MdDeleteOutline } from "react-icons/md";
 import { RiNotificationSnoozeLine } from "react-icons/ri";
 import Lower from "../Components/Lower";
 
@@ -9,7 +9,7 @@ const FriendPage = async({ params }) => {
 
   const { friendId } = await params;
 
-  const res = await fetch("http://localhost:3000/data.json");
+  const res = await fetch("https://assignment-keen-keeper.vercel.app/data.json");
   const data = await res.json();
 
   const friends = data.friends;
