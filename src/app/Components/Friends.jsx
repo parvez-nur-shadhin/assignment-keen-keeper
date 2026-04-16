@@ -1,21 +1,10 @@
-'use client'
-
-import { useEffect, useState } from "react";
 import FriendCard from "./FriendCard";
 
-const Friends = () => {
-
-  const [friends, setFriends] = useState([]);
-
-  useEffect(() => {
-    fetch('/data.json')
-     .then(res => res.json())
-     .then(data => setFriends(data.friends))
-  })
+const Friends = async() => {
   
-  // const res =  fetch("/data.json");
-  // const data = res.json();
-  // const friends = data.friends;
+  const res = await fetch("https://assignment-keen-keeper.vercel.app/data.json", {cache: "no-store"});
+  const data = await res.json();
+  const friends = data.friends;
 
   return (
     <div className="max-w-277.5 mx-auto p-4">
