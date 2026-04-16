@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const FriendCard = ({ friend }) => {
-  const { id, name, picture, tags, status } = friend;
+  const { id, name, picture, tags, status, days_since_contact } = friend;
   return (
     <Link href={`/${id}`}>
       <div className="space-y-2 p-6 rounded-lg border border-gray-300 shadow-md cursor-pointer">
@@ -15,6 +15,7 @@ const FriendCard = ({ friend }) => {
           alt={name}
         />
         <h1 className="text-center">{name}</h1>
+        <p className="text-[16px] text-[#64748B] text-center my-2">{days_since_contact}d ago</p>
         <div className="flex items-center justify-center gap-5">
           {tags.map((tag, index) => {
             return (

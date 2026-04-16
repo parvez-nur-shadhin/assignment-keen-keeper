@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { RiHomeLine, RiTimeLine } from "react-icons/ri";
+import { VscGraphLine } from "react-icons/vsc";
 
 
 const Navbar = () => {
@@ -31,17 +33,17 @@ const Navbar = () => {
     <>
       <li className={`${home ? "bg-[#244D3F] text-white rounded-md": ""}`}>
         <Link onClick={handleHome} href={"/"}>
-          Home
+          <RiHomeLine />  Home
         </Link>
       </li>
       <li className={`${timeline ? "bg-[#244D3F] text-white rounded-md": ""}`}>
         <Link onClick={handleTimeline} href={"/timeline"}>
-          Timeline
+          <RiTimeLine /> Timeline
         </Link>
       </li>
       <li className={`${stats ? "bg-[#244D3F] text-white rounded-md": ""}`}>
         <Link onClick={handleStats} href={"/stats"}>
-           Stats
+           <VscGraphLine /> Stats
         </Link>
       </li>
     </>
