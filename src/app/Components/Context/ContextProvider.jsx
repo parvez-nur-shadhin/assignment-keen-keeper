@@ -16,7 +16,7 @@ const ContextProvider = ({ children }) => {
     setText([...text, expectedFriend]);
   }
   const handleVideo = (expectedFriend) => {
-    setVideo([video, expectedFriend])
+    setVideo([...video, expectedFriend])
   }
   const data = {
     call,

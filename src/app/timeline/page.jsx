@@ -85,7 +85,7 @@ const TimeLinePage = () => {
         {call.map((item) => {
           return (
             <div
-              key={item.id}
+              key={`call-${item.id}`}
               className={`flex gap-3 items-center justify-start bg-white rounded-lg p-4 mt-5 ${isCall ? "" : "hidden"}`}
             >
               <div>
@@ -106,7 +106,7 @@ const TimeLinePage = () => {
         {text.map((item) => {
           return (
             <div
-              key={item.id}
+              key={`text-${item.id}`}
               className={`flex gap-3 items-center justify-start bg-white rounded-lg p-4 mt-5 ${isText ? "" : "hidden"}`}
             >
               <div>
@@ -127,7 +127,7 @@ const TimeLinePage = () => {
         {video.map((item) => {
           return (
             <div
-              key={item.id}
+              key={`video-${item.id}`}
               className={`flex gap-3 items-center justify-start bg-white rounded-lg p-4 mt-5 ${isVideo ? "" : "hidden"}`}
             >
               <div>
