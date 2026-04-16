@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useState } from "react";
+import { toast } from "react-toastify";
 
 export const Context = createContext();
 
@@ -11,13 +12,22 @@ const ContextProvider = ({ children }) => {
 
   const handleCall = (expectedFriend) => {
     setCall([...call, expectedFriend]);
-  }
+    toast.success(`Call with ${expectedFriend.name}`, {
+      position: "top-center",
+    });
+  };
   const handleText = (expectedFriend) => {
     setText([...text, expectedFriend]);
-  }
+    toast.success(`Text with ${expectedFriend.name}`, {
+      position: "top-center",
+    });
+  };
   const handleVideo = (expectedFriend) => {
-    setVideo([...video, expectedFriend])
-  }
+    setVideo([...video, expectedFriend]);
+    toast.success(`Video with ${expectedFriend.name}`, {
+      position: "top-center",
+    });
+  };
   const data = {
     call,
     setCall,
@@ -27,7 +37,7 @@ const ContextProvider = ({ children }) => {
     setVideo,
     handleCall,
     handleText,
-    handleVideo
+    handleVideo,
   };
   return <Context.Provider value={data}>{children}</Context.Provider>;
 };
